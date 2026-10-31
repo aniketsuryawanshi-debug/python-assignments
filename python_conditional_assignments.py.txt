@@ -1,0 +1,441 @@
+# =====================================================================
+# PYTHON CONDITIONAL ASSIGNMENTS (NO LOOPS)
+# =====================================================================
+
+# 1. Positive or Negative
+def q1(num):
+    print(f"Q1. Number: {num}")
+    if num > 0: print("Result: Positive\n")
+    elif num < 0: print("Result: Negative\n")
+    else: print("Result: Zero\n")
+
+# 2. Even or Odd
+def q2(num):
+    print(f"Q2. Number: {num}")
+    if num % 2 == 0: print("Result: Even\n")
+    else: print("Result: Odd\n")
+
+# 3. Voting Eligibility
+def q3(age):
+    print(f"Q3. Age: {age}")
+    if age >= 18: print("Result: Eligible to vote\n")
+    else: print("Result: Not eligible to vote\n")
+
+# 4. Greater than 100
+def q4(num):
+    print(f"Q4. Number: {num}")
+    if num > 100: print("Result: Greater than 100\n")
+    else: print("Result: Not greater than 100\n")
+
+# 5. Leap Year
+def q5(year):
+    print(f"Q5. Year: {year}")
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0): print("Result: Leap Year\n")
+    else: print("Result: Not a Leap Year\n")
+
+# 6. Compare Two Numbers
+def q6(a, b):
+    print(f"Q6. Numbers: {a}, {b}")
+    if a > b: print(f"Result: {a} is greater\n")
+    elif b > a: print(f"Result: {b} is greater\n")
+    else: print("Result: Both numbers are equal\n")
+
+# 7. Vowel or Consonant
+def q7(char):
+    print(f"Q7. Character: '{char}'")
+    c = char.lower()
+    if c in 'aeiou': print("Result: Vowel\n")
+    elif c.isalpha(): print("Result: Consonant\n")
+    else: print("Result: Not an alphabet character\n")
+
+# 8. Divisible by 5
+def q8(num):
+    print(f"Q8. Number: {num}")
+    if num % 5 == 0: print("Result: Divisible by 5\n")
+    else: print("Result: Not divisible by 5\n")
+
+# 9. Pass or Fail
+def q9(marks):
+    print(f"Q9. Marks: {marks}")
+    if marks >= 40: print("Result: Passed\n")
+    else: print("Result: Failed\n")
+
+# 10. Single Digit Number
+def q10(num):
+    print(f"Q10. Number: {num}")
+    if -9 <= num <= 9: print("Result: Single-digit number\n")
+    else: print("Result: Not a single-digit number\n")
+
+# 11. Temperature Hot or Cold
+def q11(temp):
+    print(f"Q11. Temperature: {temp}°C")
+    if temp > 30: print("Result: Hot\n")
+    else: print("Result: Cold\n")
+
+# 12. Child or Adult
+def q12(age):
+    print(f"Q12. Age: {age}")
+    if age < 18: print("Result: Child\n")
+    else: print("Result: Adult\n")
+
+# 13. Zero or Non-Zero
+def q13(num):
+    print(f"Q13. Number: {num}")
+    if num == 0: print("Result: Zero\n")
+    else: print("Result: Non-zero\n")
+
+# 14. Uppercase or Lowercase
+def q14(char):
+    print(f"Q14. Character: '{char}'")
+    if char.isupper(): print("Result: Uppercase\n")
+    elif char.islower(): print("Result: Lowercase\n")
+    else: print("Result: Not an alphabetic character\n")
+
+# 15. Divisible by 3 and 7
+def q15(num):
+    print(f"Q15. Number: {num}")
+    if num % 3 == 0 and num % 7 == 0: print("Result: Divisible by both 3 and 7\n")
+    else: print("Result: Not divisible by both 3 and 7\n")
+
+# 16. Greatest of Three Numbers
+def q16(a, b, c):
+    print(f"Q16. Numbers: {a}, {b}, {c}")
+    if a >= b and a >= c: print(f"Result: {a} is greatest\n")
+    elif b >= a and b >= c: print(f"Result: {b} is greatest\n")
+    else: print(f"Result: {c} is greatest\n")
+
+# 17. Grade Based on Marks
+def q17(marks):
+    print(f"Q17. Marks: {marks}")
+    if marks >= 85: print("Result: Grade A\n")
+    elif marks >= 70: print("Result: Grade B\n")
+    elif marks >= 40: print("Result: Grade C\n")
+    else: print("Result: Fail\n")
+
+# 18. Positive, Negative, or Zero
+def q18(num):
+    print(f"Q18. Number: {num}")
+    if num > 0: print("Result: Positive\n")
+    elif num < 0: print("Result: Negative\n")
+    else: print("Result: Zero\n")
+
+# 19. Day Name Based on Number
+def q19(day):
+    print(f"Q19. Day Number: {day}")
+    if day == 1: print("Result: Monday\n")
+    elif day == 2: print("Result: Tuesday\n")
+    elif day == 3: print("Result: Wednesday\n")
+    elif day == 4: print("Result: Thursday\n")
+    elif day == 5: print("Result: Friday\n")
+    elif day == 6: print("Result: Saturday\n")
+    elif day == 7: print("Result: Sunday\n")
+    else: print("Result: Invalid day number\n")
+
+# 20. Ticket Price Based on Age
+def q20(age):
+    print(f"Q20. Age: {age}")
+    if age < 5: print("Result: Free\n")
+    elif age <= 12: print("Result: $5\n")
+    elif age <= 60: print("Result: $12\n")
+    else: print("Result: $8\n")
+
+# 21. Smallest of Three Numbers
+def q21(a, b, c):
+    print(f"Q21. Numbers: {a}, {b}, {c}")
+    if a <= b and a <= c: print(f"Result: {a} is smallest\n")
+    elif b <= a and b <= c: print(f"Result: {b} is smallest\n")
+    else: print(f"Result: {c} is smallest\n")
+
+# 22. Salary Bonus Based on Years of Service
+def q22(years, salary):
+    print(f"Q22. Years of Service: {years}, Salary: ${salary}")
+    if years > 10: print(f"Result: Bonus = ${salary * 0.20}\n")
+    elif years >= 5: print(f"Result: Bonus = ${salary * 0.10}\n")
+    else: print(f"Result: Bonus = ${salary * 0.05}\n")
+
+# 23. Electricity Bill Calculation
+def q23(units):
+    print(f"Q23. Units Consumed: {units}")
+    if units <= 100: bill = units * 1.5
+    elif units <= 300: bill = (100 * 1.5) + ((units - 100) * 2.5)
+    else: bill = (100 * 1.5) + (200 * 2.5) + ((units - 300) * 4.0)
+    print(f"Result: Total Bill = ${bill}\n")
+
+# 24. Exam Results
+def q24(marks):
+    print(f"Q24. Marks: {marks}")
+    if marks >= 75: print("Result: Distinction\n")
+    elif marks >= 60: print("Result: First Class\n")
+    elif marks >= 40: print("Result: Pass\n")
+    else: print("Result: Fail\n")
+
+# 25. Triangle Type
+def q25(a, b, c):
+    print(f"Q25. Sides: {a}, {b}, {c}")
+    if a == b and b == c: print("Result: Equilateral Triangle\n")
+    elif a == b or b == c or a == c: print("Result: Isosceles Triangle\n")
+    else: print("Result: Scalene Triangle\n")
+
+# 26. Month Names
+def q26(m):
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    print(f"Q26. Month Number: {m}")
+    if 1 <= m <= 12: print(f"Result: {months[m-1]}\n")
+    else: print("Result: Invalid month number\n")
+
+# 27. Login Status
+def q27(user, pwd):
+    print(f"Q27. Username: {user}, Password: {pwd}")
+    if user == "admin" and pwd == "secret123": print("Result: Login Successful\n")
+    elif user == "admin": print("Result: Incorrect Password\n")
+    else: print("Result: User not found\n")
+
+# 28. Shopping Discount
+def q28(amount):
+    print(f"Q28. Shopping Amount: ${amount}")
+    if amount >= 5000: print(f"Result: Discount = ${amount * 0.20}\n")
+    elif amount >= 2000: print(f"Result: Discount = ${amount * 0.10}\n")
+    else: print("Result: No Discount\n")
+
+# 29. Blood Donation Eligibility
+def q29(age, weight):
+    print(f"Q29. Age: {age}, Weight: {weight}kg")
+    if age >= 18 and weight >= 50: print("Result: Eligible to donate blood\n")
+    else: print("Result: Not eligible to donate blood\n")
+
+# 30. Type of Number Digits
+def q30(num):
+    print(f"Q30. Number: {num}")
+    if -9 <= num <= 9: print("Result: Single digit\n")
+    elif -99 <= num <= 99: print("Result: Double digit\n")
+    elif -999 <= num <= 999: print("Result: Three digit\n")
+    else: print("Result: More than three digits\n")
+
+# 31. Positive and Even (Nested If)
+def q31(num):
+    print(f"Q31. Number: {num}")
+    if num > 0:
+        if num % 2 == 0: print("Result: Positive and Even\n")
+        else: print("Result: Positive but Odd\n")
+    else: print("Result: Not Positive\n")
+
+# 32. Exam Eligibility (Attendance + Marks)
+def q32(att, marks):
+    print(f"Q32. Attendance: {att}%, Marks: {marks}")
+    if att >= 75:
+        if marks >= 40: print("Result: Eligible for exam\n")
+        else: print("Result: Ineligible (Low Marks)\n")
+    else: print("Result: Ineligible (Low Attendance)\n")
+
+# 33. Loan Application
+def q33(salary, credit):
+    print(f"Q33. Salary: ${salary}, Credit Score: {credit}")
+    if salary >= 30000:
+        if credit >= 700: print("Result: Eligible for Loan\n")
+        else: print("Result: Loan Rejected (Low Credit Score)\n")
+    else: print("Result: Loan Rejected (Low Salary)\n")
+
+# 34. Century & Leap Year
+def q34(year):
+    print(f"Q34. Year: {year}")
+    if year % 100 == 0:
+        if year % 400 == 0: print("Result: Century Year and Leap Year\n")
+        else: print("Result: Century Year but NOT a Leap Year\n")
+    else: print("Result: Not a Century Year\n")
+
+# 35. Divisible by 3 and 5
+def q35(num):
+    print(f"Q35. Number: {num}")
+    if num % 3 == 0:
+        if num % 5 == 0: print("Result: Divisible by both 3 and 5\n")
+        else: print("Result: Divisible by 3 only\n")
+    else: print("Result: Not divisible by 3\n")
+
+# 36. Driving License
+def q36(age, passed):
+    print(f"Q36. Age: {age}, Test Passed: {passed}")
+    if age >= 18:
+        if passed: print("Result: Driving License Issued\n")
+        else: print("Result: Test not passed\n")
+    else: print("Result: Underage for driving license\n")
+
+# 37. Number Between 10 and 50
+def q37(num):
+    print(f"Q37. Number: {num}")
+    if num >= 10:
+        if num <= 50: print("Result: Lies between 10 and 50\n")
+        else: print("Result: Greater than 50\n")
+    else: print("Result: Less than 10\n")
+
+# 38. Student Passed All Subjects
+def q38(s1, s2, s3):
+    print(f"Q38. Subjects: {s1}, {s2}, {s3}")
+    if s1 >= 40:
+        if s2 >= 40:
+            if s3 >= 40: print("Result: Passed all subjects\n")
+            else: print("Result: Failed in Subject 3\n")
+        else: print("Result: Failed in Subject 2\n")
+    else: print("Result: Failed in Subject 1\n")
+
+# 39. Between 0 and 100
+def q39(num):
+    print(f"Q39. Number: {num}")
+    if num > 0:
+        if num < 100: print("Result: Strictly between 0 and 100\n")
+        else: print("Result: Greater than or equal to 100\n")
+    else: print("Result: Less than or equal to 0\n")
+
+# 40. Password Validity (Nested If)
+def q40(pwd):
+    print(f"Q40. Password: '{pwd}'")
+    if len(pwd) >= 8:
+        if any(c.isdigit() for c in pwd): print("Result: Valid Password\n")
+        else: print("Result: Invalid (Must contain at least one digit)\n")
+    else: print("Result: Invalid (Too short)\n")
+
+# Match Case Programs (41 - 50)
+def q41(day):
+    print(f"Q41. Day: {day}")
+    match day:
+        case 1: res = "Monday"
+        case 2: res = "Tuesday"
+        case 3: res = "Wednesday"
+        case 4: res = "Thursday"
+        case 5: res = "Friday"
+        case 6: res = "Saturday"
+        case 7: res = "Sunday"
+        case _: res = "Invalid"
+    print(f"Result: {res}\n")
+
+def q42(a, b, op):
+    print(f"Q42. Operation: {a} {op} {b}")
+    match op:
+        case '+': res = a + b
+        case '-': res = a - b
+        case '*': res = a * b
+        case '/': res = a / b if b != 0 else "Error: Division by zero"
+        case _: res = "Invalid operator"
+    print(f"Result: {res}\n")
+
+def q43(month):
+    print(f"Q43. Month: {month}")
+    match month:
+        case "January" | "March" | "May" | "July" | "August" | "October" | "December": res = "31 days"
+        case "April" | "June" | "September" | "November": res = "30 days"
+        case "February": res = "28 or 29 days"
+        case _: res = "Invalid month"
+    print(f"Result: {res}\n")
+
+def q44(color):
+    print(f"Q44. Traffic Light: {color}")
+    match color.lower():
+        case "red": res = "Stop"
+        case "yellow": res = "Slow Down"
+        case "green": res = "Go"
+        case _: res = "Invalid signal"
+    print(f"Result: {res}\n")
+
+def q45(choice):
+    print(f"Q45. Food Choice: {choice}")
+    match choice:
+        case 1: res = "Burger - $5.00"
+        case 2: res = "Pizza - $8.50"
+        case 3: res = "Pasta - $6.00"
+        case _: res = "Unavailable"
+    print(f"Result: {res}\n")
+
+def q46(grade):
+    print(f"Q46. Grade: {grade}")
+    match grade.upper():
+        case "A": res = "Excellent"
+        case "B": res = "Good"
+        case "C": res = "Average"
+        case "F": res = "Fail"
+        case _: res = "Invalid"
+    print(f"Result: {res}\n")
+
+def q47(role):
+    print(f"Q47. Role: {role}")
+    match role.lower():
+        case "admin": res = "Full system access"
+        case "user": res = "Standard user access"
+        case "guest": res = "Read-only access"
+        case _: res = "Unknown role"
+    print(f"Result: {res}\n")
+
+def q48(lang):
+    print(f"Q48. Language: {lang}")
+    match lang.lower():
+        case "py" | "python": res = "Python Selected"
+        case "js" | "javascript": res = "JavaScript Selected"
+        case _: res = "Not supported"
+    print(f"Result: {res}\n")
+
+def q49(status):
+    print(f"Q49. Status: {status}")
+    match status.lower():
+        case "pass" | "passed": res = "Congratulations, you passed!"
+        case "fail" | "failed": res = "Better luck next time."
+        case _: res = "Status unknown"
+    print(f"Result: {res}\n")
+
+def q50(opt):
+    print(f"Q50. ATM Option: {opt}")
+    match opt:
+        case 1: res = "Current Balance: $1000"
+        case 2: res = "Deposit Mode Selected"
+        case 3: res = "Withdrawal Mode Selected"
+        case _: res = "Invalid ATM option"
+    print(f"Result: {res}\n")
+
+if __name__ == "__main__":
+    q1(-5)
+    q2(8)
+    q3(20)
+    q4(150)
+    q5(2024)
+    q6(45, 78)
+    q7('E')
+    q8(25)
+    q9(65)
+    q10(7)
+    q11(35)
+    q12(15)
+    q13(0)
+    q14('A')
+    q15(21)
+    q16(12, 45, 33)
+    q17(88)
+    q18(-10)
+    q19(3)
+    q20(10)
+    q21(4, 9, 2)
+    q22(12, 50000)
+    q23(250)
+    q24(82)
+    q25(5, 5, 5)
+    q26(7)
+    q27("admin", "secret123")
+    q28(6000)
+    q29(22, 65)
+    q30(450)
+    q31(16)
+    q32(80, 75)
+    q33(45000, 750)
+    q34(2000)
+    q35(15)
+    q36(19, True)
+    q37(35)
+    q38(55, 60, 45)
+    q39(45)
+    q40("Secure123")
+    q41(4)
+    q42(10, 5, '+')
+    q43("March")
+    q44("Green")
+    q45(2)
+    q46("A")
+    q47("admin")
+    q48("python")
+    q49("pass")
+    q50(1)
