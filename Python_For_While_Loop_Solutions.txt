@@ -1,0 +1,375 @@
+Python Assignments: For Loop and While Loop
+Topic: Python For & While Loop Assignments with Solutions
+
+1. Print numbers from 1 to 10 using for loop.
+Solution:
+for i in range(1, 11):
+    print(i)
+
+2. Print numbers from 10 to 1 using for loop.
+Solution:
+for i in range(10, 0, -1):
+    print(i)
+
+3. Print all even numbers between 1 and 50.
+Solution:
+for i in range(2, 51, 2):
+    print(i)
+
+4. Print all odd numbers between 1 and 50.
+Solution:
+for i in range(1, 50, 2):
+    print(i)
+
+5. Print multiplication table of a given number.
+Solution:
+num = 5
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+
+6. Calculate sum of first 10 natural numbers.
+Solution:
+total_sum = 0
+for i in range(1, 11):
+    total_sum += i
+print("Sum:", total_sum)
+
+7. Calculate factorial of a number using for loop.
+Solution:
+num = 5
+fact = 1
+for i in range(1, num + 1):
+    fact *= i
+print("Factorial:", fact)
+
+8. Print all characters of a string.
+Solution:
+s = "Python"
+for char in s:
+    print(char)
+
+9. Print square of numbers from 1 to 10.
+Solution:
+for i in range(1, 11):
+    print(f"{i} squared = {i**2}")
+
+10. Print cube of numbers from 1 to 10.
+Solution:
+for i in range(1, 11):
+    print(f"{i} cubed = {i**3}")
+
+11. Count number of digits in a number.
+Solution:
+num = 12345
+count = 0
+temp = num
+while temp > 0:
+    count += 1
+    temp //= 10
+print("Digits count:", count)
+
+12. Reverse a number using while loop.
+Solution:
+num = 1234
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+print("Reversed:", rev)
+
+13. Check whether a number is palindrome.
+Solution:
+num = 121
+orig = num
+rev = 0
+while num > 0:
+    rev = rev * 10 + num % 10
+    num //= 10
+if orig == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+14. Print Fibonacci series up to n terms.
+Solution:
+n = 10
+a, b = 0, 1
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+15. Find sum of digits of a number.
+Solution:
+num = 1234
+tot = 0
+while num > 0:
+    tot += num % 10
+    num //= 10
+print("Sum of digits:", tot)
+
+16. Print numbers divisible by 5 between 1 and 100.
+Solution:
+for i in range(1, 101):
+    if i % 5 == 0:
+        print(i)
+
+17. Find largest digit in a number.
+Solution:
+num = 48291
+max_d = 0
+while num > 0:
+    d = num % 10
+    if d > max_d:
+        max_d = d
+    num //= 10
+print("Largest digit:", max_d)
+
+18. Print prime numbers between 1 and 50.
+Solution:
+for num in range(2, 51):
+    is_prime = True
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(num)
+
+19. Check whether a number is prime.
+Solution:
+num = 17
+is_prime = True
+if num <= 1:
+    is_prime = False
+else:
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+print("Prime" if is_prime else "Not Prime")
+
+20. Print pattern of stars (triangle).
+Solution:
+for i in range(1, 6):
+    print("*" * i)
+
+21. Print pattern of numbers.
+Solution:
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+
+22. Find sum of even digits in a number.
+Solution:
+num = 123456
+tot = 0
+while num > 0:
+    d = num % 10
+    if d % 2 == 0:
+        tot += d
+    num //= 10
+print("Sum of even digits:", tot)
+
+23. Find sum of odd digits in a number.
+Solution:
+num = 123456
+tot = 0
+while num > 0:
+    d = num % 10
+    if d % 2 != 0:
+        tot += d
+    num //= 10
+print("Sum of odd digits:", tot)
+
+24. Count vowels in a string.
+Solution:
+s = "Hello World"
+vowels = "aeiouAEIOU"
+count = sum(1 for c in s if c in vowels)
+print("Vowels count:", count)
+
+25. Count consonants in a string.
+Solution:
+s = "Hello World"
+vowels = "aeiouAEIOU"
+count = sum(1 for c in s if c.isalpha() and c not in vowels)
+print("Consonants count:", count)
+
+26. Print ASCII values of characters in a string.
+Solution:
+s = "ABC"
+for c in s:
+    print(f"{c}: {ord(c)}")
+
+27. Print all factors of a number.
+Solution:
+num = 24
+for i in range(1, num + 1):
+    if num % i == 0:
+        print(i)
+
+28. Check whether a number is Armstrong.
+Solution:
+num = 153
+orig = num
+order = len(str(num))
+tot = 0
+while num > 0:
+    tot += (num % 10) ** order
+    num //= 10
+print("Armstrong" if orig == tot else "Not Armstrong")
+
+29. Generate first n natural numbers using while loop.
+Solution:
+n = 10
+i = 1
+while i <= n:
+    print(i)
+    i += 1
+
+30. Generate first n even numbers.
+Solution:
+n = 10
+for i in range(1, n + 1):
+    print(2 * i)
+
+31. Generate first n odd numbers.
+Solution:
+n = 10
+for i in range(1, n + 1):
+    print(2 * i - 1)
+
+32. Calculate power of a number without using pow().
+Solution:
+base, exp = 2, 3
+res = 1
+for _ in range(exp):
+    res *= base
+print("Power:", res)
+
+33. Print reverse of a string.
+Solution:
+s = "Python"
+print(s[::-1])
+
+34. Check whether a string is palindrome.
+Solution:
+s = "madam"
+print("Palindrome" if s == s[::-1] else "Not Palindrome")
+
+35. Print multiplication tables from 1 to 5.
+Solution:
+for i in range(1, 6):
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i*j}")
+    print("-" * 10)
+
+36. Find sum of numbers entered by user until 0 is entered.
+Solution:
+total = 0
+while True:
+    val = int(input("Enter number (0 to stop): "))
+    if val == 0:
+        break
+    total += val
+print("Total sum:", total)
+
+37. Print numbers until user enters a negative number.
+Solution:
+while True:
+    val = int(input("Enter number (negative to stop): "))
+    if val < 0:
+        break
+    print(val)
+
+38. Find smallest digit in a number.
+Solution:
+num = 48291
+min_d = 9
+while num > 0:
+    d = num % 10
+    if d < min_d:
+        min_d = d
+    num //= 10
+print("Smallest digit:", min_d)
+
+39. Count total words in a string.
+Solution:
+s = "Python is a great programming language"
+words = s.split()
+print("Word count:", len(words))
+
+40. Print numbers which are perfect squares between 1 and 100.
+Solution:
+for i in range(1, 11):
+    print(i**2)
+
+41. Print numbers which are perfect cubes between 1 and 100
+Solution:
+for i in range(1, 5):
+    print(i**3)
+
+42. Calculate sum of squares of first n numbers.
+Solution:
+n = 5
+tot = sum(i**2 for i in range(1, n+1))
+print("Sum of squares:", tot)
+
+.43. Calculate sum of cubes of first n numbers.
+Solution:
+n = 5
+tot = sum(i**3 for i in range(1, n+1))
+print("Sum of cubes:", tot)
+
+44. Print alternate characters of a string.
+Solution:
+s = "Programming"
+for i in range(0, len(s), 2):
+    print(s[i])
+
+45. Print numbers skipping multiples of 3.
+Solution:
+for i in range(1, 21):
+    if i % 3 == 0:
+        continue
+    print(i)
+
+46. Print first n multiples of a number.
+Solution:
+num, n = 4, 5
+for i in range(1, n + 1):
+    print(num * i)
+
+47. Find product of digits of a number.
+Solution:
+num = 1234
+prod = 1
+while num > 0:
+    prod *= num % 10
+    num //= 10
+print("Product of digits:", prod)
+
+48. Check whether number is strong number.
+Solution:
+import math
+num = 145
+orig = num
+tot = 0
+while num > 0:
+    tot += math.factorial(num % 10)
+    num //= 10
+print("Strong Number" if orig == tot else "Not Strong Number")
+
+49. Display menu-driven program using while loop.
+Solution:
+while True:
+    print("1. Say Hello\n2. Exit")
+    choice = input("Enter choice: ")
+    if choice == '1':
+        print("Hello!")
+    elif choice == '2':
+        break
+    else:
+        print("Invalid choice")
