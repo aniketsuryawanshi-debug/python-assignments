@@ -1,10 +1,6 @@
 PYTHON LIST ASSIGNMENTS (USING LIST METHODS) - SOLUTIONS & CODE GUIDE
-
-This document provides clear, well-commented Python solutions for all 40 list assignments.
-
 --------------------------------------------------------------------------------
 1. Create an empty list and add 5 integers using append().
---------------------------------------------------------------------------------
 numbers = []
 numbers.append(10)
 numbers.append(20)
@@ -15,14 +11,12 @@ print(numbers)  # Output: [10, 20, 30, 40, 50]
 
 --------------------------------------------------------------------------------
 2. Create a list of strings and add a new string at the end using append().
---------------------------------------------------------------------------------
 fruits = ["apple", "banana", "cherry"]
 fruits.append("orange")
 print(fruits)  # Output: ['apple', 'banana', 'cherry', 'orange']
 
 --------------------------------------------------------------------------------
 3. Insert an element at the 3rd position using insert().
---------------------------------------------------------------------------------
 # Note: 3rd position (index 2, 0-indexed) or literal 3rd index. Usually index 2.
 items = ["a", "b", "c", "d"]
 items.insert(2, "inserted_element")
@@ -30,77 +24,66 @@ print(items)  # Output: ['a', 'b', 'inserted_element', 'c', 'd']
 
 --------------------------------------------------------------------------------
 4. Create a list and remove a specific element using remove().
---------------------------------------------------------------------------------
 colors = ["red", "green", "blue", "green"]
 colors.remove("green")  # Removes the first occurrence of "green"
 print(colors)  # Output: ['red', 'blue', 'green']
 
 --------------------------------------------------------------------------------
 5. Remove the last element of a list using pop().
---------------------------------------------------------------------------------
 numbers = [10, 20, 30, 40]
 removed = numbers.pop()
 print(f"Removed: {removed}, List: {numbers}")  # Output: Removed: 40, List: [10, 20, 30]
 
 --------------------------------------------------------------------------------
 6. Remove an element from a specific index using pop(index).
---------------------------------------------------------------------------------
 numbers = [10, 20, 30, 40]
 removed = numbers.pop(1)  # Removes element at index 1 (20)
 print(f"Removed: {removed}, List: {numbers}")  # Output: Removed: 20, List: [10, 30, 40]
 
 --------------------------------------------------------------------------------
 7. Create a list and clear all elements using clear().
---------------------------------------------------------------------------------
 items = [1, 2, 3, 4, 5]
 items.clear()
 print(items)  # Output: []
 
 --------------------------------------------------------------------------------
 8. Copy one list into another using copy().
---------------------------------------------------------------------------------
 original = [1, 2, 3]
 duplicate = original.copy()
 print(duplicate)  # Output: [1, 2, 3]
 
 --------------------------------------------------------------------------------
 9. Count how many times a specific element appears using count().
---------------------------------------------------------------------------------
 numbers = [1, 2, 3, 2, 4, 2, 5]
 count_twos = numbers.count(2)
 print(f"Count of 2: {count_twos}")  # Output: Count of 2: 3
 
 --------------------------------------------------------------------------------
 10. Sort a list of numbers in ascending order using sort().
---------------------------------------------------------------------------------
 numbers = [42, 12, 89, 5, 23]
 numbers.sort()
 print(numbers)  # Output: [5, 12, 23, 42, 89]
 
 --------------------------------------------------------------------------------
 11. Sort a list of numbers in descending order using sort(reverse=True).
---------------------------------------------------------------------------------
 numbers = [42, 12, 89, 5, 23]
 numbers.sort(reverse=True)
 print(numbers)  # Output: [89, 42, 23, 12, 5]
 
 --------------------------------------------------------------------------------
 12. Reverse the elements of a list using reverse().
---------------------------------------------------------------------------------
 items = [1, 2, 3, 4, 5]
 items.reverse()
 print(items)  # Output: [5, 4, 3, 2, 1]
 
 --------------------------------------------------------------------------------
 13. Find the index of a specific element using index().
---------------------------------------------------------------------------------
 animals = ["cat", "dog", "rabbit", "hamster"]
 idx = animals.index("rabbit")
 print(f"Index of rabbit: {idx}")  # Output: Index of rabbit: 2
 
 --------------------------------------------------------------------------------
 14. Extend a list by adding elements of another list using extend().
---------------------------------------------------------------------------------
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 list1.extend(list2)
@@ -108,27 +91,23 @@ print(list1)  # Output: [1, 2, 3, 4, 5, 6]
 
 --------------------------------------------------------------------------------
 15. Create a list and check membership using in keyword.
---------------------------------------------------------------------------------
 fruits = ["apple", "banana", "cherry"]
 has_banana = "banana" in fruits
 print(f"Is banana in list? {has_banana}")  # Output: True
 
 --------------------------------------------------------------------------------
 16. Create a list of numbers and find max and min values.
---------------------------------------------------------------------------------
 numbers = [45, 12, 89, 3, 67]
 print(f"Max: {max(numbers)}, Min: {min(numbers)}")  # Output: Max: 89, Min: 3
 
 --------------------------------------------------------------------------------
 17. Create a list of mixed data types and display them.
---------------------------------------------------------------------------------
 mixed_list = [10, "Hello", 3.14, True, None]
 for item in mixed_list:
     print(f"Value: {item}, Type: {type(item)}")
 
 --------------------------------------------------------------------------------
 18. Take user input to create a list and display it.
---------------------------------------------------------------------------------
 # user_input = input("Enter elements separated by space: ")
 # user_list = user_input.split()
 # print(user_list)
@@ -139,49 +118,42 @@ print(user_list)
 
 --------------------------------------------------------------------------------
 19. Create a list of 10 numbers and remove duplicates.
---------------------------------------------------------------------------------
 numbers = [1, 2, 2, 3, 4, 4, 5, 1, 6, 7]
 unique_numbers = list(set(numbers))
 print(unique_numbers)  # Output order may vary, e.g., [1, 2, 3, 4, 5, 6, 7]
 
 --------------------------------------------------------------------------------
 20. Create a list and slice the first 5 elements.
---------------------------------------------------------------------------------
 numbers = [10, 20, 30, 40, 50, 60, 70, 80]
 first_five = numbers[:5]
 print(first_five)  # Output: [10, 20, 30, 40, 50]
 
 --------------------------------------------------------------------------------
 21. Create a list and slice the last 3 elements.
---------------------------------------------------------------------------------
 numbers = [10, 20, 30, 40, 50, 60, 70, 80]
 last_three = numbers[-3:]
 print(last_three)  # Output: [60, 70, 80]
 
 --------------------------------------------------------------------------------
 22. Create a list and replace an element at a given index.
---------------------------------------------------------------------------------
 colors = ["red", "blue", "green"]
 colors[1] = "yellow"
 print(colors)  # Output: ['red', 'yellow', 'green']
 
 --------------------------------------------------------------------------------
 23. Create a list and find the sum of elements.
---------------------------------------------------------------------------------
 numbers = [10, 20, 30, 40, 50]
 total = sum(numbers)
 print(f"Sum: {total}")  # Output: Sum: 150
 
 --------------------------------------------------------------------------------
 24. Create a list and find the average of elements.
---------------------------------------------------------------------------------
 numbers = [10, 20, 30, 40, 50]
 average = sum(numbers) / len(numbers) if numbers else 0
 print(f"Average: {average}")  # Output: Average: 30.0
 
 --------------------------------------------------------------------------------
 25. Create a list and check if it is empty.
---------------------------------------------------------------------------------
 empty_list = []
 if not empty_list:
     print("The list is empty.")
@@ -190,7 +162,6 @@ else:
 
 --------------------------------------------------------------------------------
 26. Create two lists and merge them into one.
---------------------------------------------------------------------------------
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 merged = list1 + list2  # or list1.extend(list2)
@@ -198,35 +169,30 @@ print(merged)  # Output: [1, 2, 3, 4, 5, 6]
 
 --------------------------------------------------------------------------------
 27. Create a list and convert it into a tuple.
---------------------------------------------------------------------------------
 my_list = [1, 2, 3, 4]
 my_tuple = tuple(my_list)
 print(my_tuple, type(my_tuple))  # Output: (1, 2, 3, 4) <class 'tuple'>
 
 --------------------------------------------------------------------------------
 28. Create a tuple and convert it into a list.
---------------------------------------------------------------------------------
 my_tuple = (1, 2, 3, 4)
 my_list = list(my_tuple)
 print(my_list, type(my_list))  # Output: [1, 2, 3, 4] <class 'list'>
 
 --------------------------------------------------------------------------------
 29. Create a list and delete an element using del keyword.
---------------------------------------------------------------------------------
 colors = ["red", "blue", "green", "yellow"]
 del colors[1]  # Deletes element at index 1 ("blue")
 print(colors)  # Output: ['red', 'green', 'yellow']
 
 --------------------------------------------------------------------------------
 30. Create a list of strings and sort alphabetically.
---------------------------------------------------------------------------------
 words = ["banana", "apple", "cherry", "date"]
 words.sort()
 print(words)  # Output: ['apple', 'banana', 'cherry', 'date']
 
 --------------------------------------------------------------------------------
 31. Create a list of numbers and sort without using sort() (use sorted()).
---------------------------------------------------------------------------------
 numbers = [42, 12, 89, 5, 23]
 sorted_numbers = sorted(numbers)
 print(f"Original: {numbers}")
@@ -234,14 +200,12 @@ print(f"Sorted: {sorted_numbers}")
 
 --------------------------------------------------------------------------------
 32. Create a list and reverse it without using reverse() (use slicing).
---------------------------------------------------------------------------------
 numbers = [1, 2, 3, 4, 5]
 reversed_numbers = numbers[::-1]
 print(reversed_numbers)  # Output: [5, 4, 3, 2, 1]
 
 --------------------------------------------------------------------------------
 33. Create a list and find the second largest number.
---------------------------------------------------------------------------------
 numbers = [10, 45, 22, 89, 56, 89, 33]
 unique_sorted = sorted(list(set(numbers)), reverse=True)
 second_largest = unique_sorted[1] if len(unique_sorted) >= 2 else None
@@ -249,7 +213,6 @@ print(f"Second largest: {second_largest}")  # Output: 56
 
 --------------------------------------------------------------------------------
 34. Create a list and find common elements between two lists.
---------------------------------------------------------------------------------
 list1 = [1, 2, 3, 4, 5]
 list2 = [4, 5, 6, 7, 8]
 common = list(set(list1) & set(list2))
@@ -257,21 +220,18 @@ print(f"Common elements: {common}")  # Output: [4, 5]
 
 --------------------------------------------------------------------------------
 35. Create a list and remove all even numbers.
---------------------------------------------------------------------------------
 numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 odd_numbers = [num for num in numbers if num % 2 != 0]
 print(odd_numbers)  # Output: [1, 3, 5, 7]
 
 --------------------------------------------------------------------------------
 36. Create a list and remove all odd numbers.
---------------------------------------------------------------------------------
 numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 even_numbers = [num for num in numbers if num % 2 == 0]
 print(even_numbers)  # Output: [2, 4, 6, 8]
 
 --------------------------------------------------------------------------------
 37. Create a list and check palindrome list.
---------------------------------------------------------------------------------
 lst1 = [1, 2, 3, 2, 1]
 lst2 = [1, 2, 3, 4, 5]
 
@@ -283,14 +243,12 @@ print(f"List 2 is palindrome? {is_palindrome2}")  # Output: False
 
 --------------------------------------------------------------------------------
 38. Create a list and count total elements.
---------------------------------------------------------------------------------
 items = [10, 20, 30, 40, 50]
 total_elements = len(items)
 print(f"Total elements: {total_elements}")  # Output: 5
 
 --------------------------------------------------------------------------------
 39. Create a nested list and access inner elements.
---------------------------------------------------------------------------------
 nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # Access element 5 (row index 1, column index 1)
 element = nested_list[1][1]
@@ -298,7 +256,6 @@ print(f"Nested element at [1][1]: {element}")  # Output: 5
 
 --------------------------------------------------------------------------------
 40. Create a list and demonstrate all list methods.
---------------------------------------------------------------------------------
 # Summary of list methods demonstrated across assignments:
 # 1. append(x)   - Add element at end
 # 2. extend(iterable) - Extend list by appending elements
